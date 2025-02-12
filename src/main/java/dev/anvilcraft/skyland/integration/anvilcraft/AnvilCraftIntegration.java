@@ -1,6 +1,6 @@
 package dev.anvilcraft.skyland.integration.anvilcraft;
 
-import dev.anvilcraft.lib.integration.Integration;
+import dev.anvilcraft.lib.integration.Integrations;
 import dev.anvilcraft.skyland.integration.anvilcraft.event.AnvilEventListener;
 import dev.anvilcraft.skyland.integration.anvilcraft.init.AnvilCraftIntegrationRegistries;
 import net.neoforged.fml.ModContainer;
@@ -9,8 +9,8 @@ import net.neoforged.neoforge.common.NeoForge;
 
 import java.util.Optional;
 
-public class AnvilCraftIntegration implements Integration {
-    @Override
+@Integrations("anvilcraft")
+public class AnvilCraftIntegration {
     public void apply() {
         Optional<? extends ModContainer> skyland = ModList.get().getModContainerById("skyland");
         if (skyland.isEmpty()) return;

@@ -1,6 +1,6 @@
 package dev.anvilcraft.skyland.integration.rg;
 
-import dev.anvilcraft.lib.integration.Integration;
+import dev.anvilcraft.lib.integration.Integrations;
 import dev.anvilcraft.rg.api.RGAdditional;
 import dev.anvilcraft.rg.api.server.TranslationUtil;
 import dev.anvilcraft.skyland.integration.rg.event.RollingGateEventListener;
@@ -10,8 +10,8 @@ import net.neoforged.neoforge.common.NeoForge;
 
 import java.util.Optional;
 
-public class RollingGateIntegration implements Integration {
-    @Override
+@Integrations("rolling_gate")
+public class RollingGateIntegration {
     public void apply() {
         Optional<? extends ModContainer> skyland = ModList.get().getModContainerById("skyland");
         if (skyland.isEmpty()) return;
