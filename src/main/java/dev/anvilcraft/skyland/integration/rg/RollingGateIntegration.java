@@ -10,7 +10,7 @@ import net.neoforged.neoforge.common.NeoForge;
 
 import java.util.Optional;
 
-@Integrations("rolling_gate")
+@Integrations(value = "rolling_gate")
 public class RollingGateIntegration {
     public void apply() {
         Optional<? extends ModContainer> skyland = ModList.get().getModContainerById("skyland");

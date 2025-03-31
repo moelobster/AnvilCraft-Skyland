@@ -9,7 +9,7 @@ import net.neoforged.neoforge.common.NeoForge;
 
 import java.util.Optional;
 
-@Integrations("anvilcraft")
+@Integrations(value = "anvilcraft")
 public class AnvilCraftIntegration {
     public void apply() {
         Optional<? extends ModContainer> skyland = ModList.get().getModContainerById("skyland");
