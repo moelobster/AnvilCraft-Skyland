@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "anvilcraft:titanium_pressure_plate"
+    },
+    "B": {
+      "item": "anvilcraft:void_matter"
+    },
+    "C": {
+      "item": "anvilcraft:levitation_powder"
+    },
+    "D": {
+      "item": "minecraft:phantom_membrane"
+    }
+  },
+  "pattern": [
+    "ABA",
+    "C C",
+    "D D"
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:elytra"
+  }
+}
