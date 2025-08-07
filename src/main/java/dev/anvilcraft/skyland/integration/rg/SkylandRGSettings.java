@@ -2,10 +2,12 @@ package dev.anvilcraft.skyland.integration.rg;
 
 import dev.anvilcraft.rg.api.RGValidator;
 import dev.anvilcraft.rg.api.Rule;
+import dev.anvilcraft.rg.api.server.RGServerRules;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.Map;
 
+@RGServerRules
 public class SkylandRGSettings {
     // 生成末地传送门
     @Rule(

@@ -1,12 +1,9 @@
 repositories {
     mavenLocal()
     mavenCentral()
-    maven { // CurseForge File
-        name = "CurseForge Maven"
-        url "https://cursemaven.com"
-        content {
-            includeGroup "curse.maven"
-        }
+    maven { // Anvil Lib
+        name = "Cjsah Maven"
+        url = "https://server.cjsah.net:1002/maven/"
     }
     maven { // Modrinth File, LazyDFU, Jade
         name = "Modrinth Maven"
@@ -14,10 +11,6 @@ repositories {
         content {
             includeGroup "maven.modrinth"
         }
-    }
-    maven { // AnvilLib、AnvilCraft
-        name = "Cjsah Maven"
-        url = "https://server.cjsah.net:1002/maven/"
     }
     maven { // Mod Menu, EMI
         name = "TerraformersMC Maven"
@@ -27,17 +20,20 @@ repositories {
         name = "Shedaniel Maven"
         url = "https://maven.shedaniel.me/"
     }
-    maven { // Registrate Fork
-        name = "Ithundxr Maven"
-        url = "https://maven.ithundxr.dev/snapshots"
-    }
-    maven { // JEI
-        name = "ModMaven"
-        url = "https://modmaven.dev"
+    maven { // CurseForge File
+        name = "CurseForge Maven"
+        url "https://cursemaven.com"
+        content {
+            includeGroup "curse.maven"
+        }
     }
     maven { // Patchouli
         name = "Jared's maven"
         url = "https://maven.blamejared.com/"
+    }
+    maven { // Registrate Fork
+        name = "Ithundxr Maven"
+        url = "https://maven.ithundxr.dev/snapshots"
     }
     maven { // KubeJS, Rhino
         name = "Saps Maven"
@@ -45,6 +41,12 @@ repositories {
         content {
             includeGroup "dev.latvian.mods"
             includeGroup "dev.latvian.apps"
+        }
+    }
+    maven {
+        url 'https://jitpack.io'
+        content {
+            includeGroup "com.github.rtyley"
         }
     }
     maven { // TOP
@@ -57,5 +59,13 @@ repositories {
     }
     maven {
         url "https://maven.su5ed.dev/releases"
+    }
+    maven { // Create Mod
+        name = "Create Mod Maven"
+        url = "https://maven.createmod.net"
+    }
+    maven {  // ForgeConfigAPIPort
+        name = "ForgeConfigAPIPort Maven"
+        url = "https://raw.githubusercontent.com/Fuzss/modresources/main/maven/"
     }
 }

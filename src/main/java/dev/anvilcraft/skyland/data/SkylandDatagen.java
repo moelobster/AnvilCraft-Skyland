@@ -15,6 +15,8 @@ import static dev.anvilcraft.skyland.Skyland.REGISTRATE;
 public class SkylandDatagen {
     @SubscribeEvent
     public static void gatherData(@NotNull GatherDataEvent event) {
+        Skyland.INTEGRATION_MANAGER.compileContent();
+        Skyland.INTEGRATION_MANAGER.loadAllDataIntegrations();
     }
 
     public static void init() {

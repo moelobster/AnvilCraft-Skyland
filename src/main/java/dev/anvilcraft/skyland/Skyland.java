@@ -2,6 +2,7 @@ package dev.anvilcraft.skyland;
 
 import com.mojang.logging.LogUtils;
 import com.tterrag.registrate.Registrate;
+import dev.anvilcraft.lib.integration.IntegrationManager;
 import dev.anvilcraft.skyland.data.SkylandDatagen;
 import net.minecraft.resources.ResourceLocation;
 import net.neoforged.bus.api.IEventBus;
@@ -16,9 +17,12 @@ public class Skyland {
     @SuppressWarnings("unused")
     public static final Logger LOGGER = LogUtils.getLogger();
     public static final Registrate REGISTRATE = Registrate.create(MOD_ID);
+    public static final IntegrationManager INTEGRATION_MANAGER = new IntegrationManager(MOD_ID);
 
     public Skyland(@SuppressWarnings("unused") IEventBus modEventBus, @SuppressWarnings("unused") ModContainer modContainer) {
         SkylandDatagen.init();
+        INTEGRATION_MANAGER.compileContent();
+        INTEGRATION_MANAGER.loadAllIntegrations();
     }
 
     public static @NotNull ResourceLocation of(String path) {
