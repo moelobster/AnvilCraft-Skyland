@@ -2,7 +2,7 @@ package dev.anvilcraft.skyland.mixin.integration.anvilcraft;
 
 import com.llamalad7.mixinextras.sugar.Local;
 import dev.anvilcraft.skyland.integration.anvilcraft.init.AnvilCraftIntegrationRegistries;
-import dev.dubhe.anvilcraft.init.ModItems;
+import dev.dubhe.anvilcraft.init.item.ModItems;
 import net.minecraft.core.BlockPos;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.InteractionResult;
@@ -21,7 +21,6 @@ import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
-import java.util.Random;
 
 @Mixin(HoeItem.class)
 abstract class HoeItemMixin {
@@ -33,7 +32,7 @@ abstract class HoeItemMixin {
         )
     )
     private void useOn(
-        UseOnContext context,
+        @NotNull UseOnContext context,
         CallbackInfoReturnable<InteractionResult> cir,
         @Local @NotNull Level level,
         @Local @NotNull BlockPos pos,
