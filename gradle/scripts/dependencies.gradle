@@ -24,5 +24,5 @@ dependencies {
     implementation "dev.anvilcraft.rg:RollingGate:${rolling_gate_version}"
 
     // Curios API
-    implementation "top.theillusivec4.curios:curios-neoforge:${curios_version}"
+    // implementation "top.theillusivec4.curios:curios-neoforge:${curios_version}"
 }
