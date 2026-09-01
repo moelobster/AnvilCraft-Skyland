@@ -74,7 +74,12 @@ jobs:
         with:
           mod: build/libs/${{ steps.properties.outputs.mod_name }}-neoforge-1.21.1-${{ steps.version.outputs.version }}.jar
           extra-mods: rolling-gate:${{ steps.properties.outputs.rolling_gate_version }} anvilcraft:${{ steps.properties.outputs.anvilcraft_version }}
-
+          maven-repos: |
+            https://server.cjsah.net:1002/maven
+            https://maven.createmod.net
+          maven-mods: |
+            dev.anvilcraft.lib:anvillib-neoforge-1.21.1:1.4.0+build.172
+            net.createmod.ponder:Ponder-NeoForge-1.21.1
 #      - name: publish neoforge mc mod
 #        uses: Kir-Antipov/mc-publish@v3.3
 #        continue-on-error: true
