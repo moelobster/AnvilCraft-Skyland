@@ -3,7 +3,7 @@
   "criteria": {
     "has_the_recipe": {
       "conditions": {
-        "recipe": "anvilcraft:solid_liquid/netherite_upgrade_smithing_template"
+        "recipe": "skyland:solid_liquid/netherite_upgrade_smithing_template"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -15,7 +15,7 @@
   ],
   "rewards": {
     "recipes": [
-      "anvilcraft:solid_liquid/netherite_upgrade_smithing_template"
+      "skyland:solid_liquid/netherite_upgrade_smithing_template"
     ]
   }
 }
