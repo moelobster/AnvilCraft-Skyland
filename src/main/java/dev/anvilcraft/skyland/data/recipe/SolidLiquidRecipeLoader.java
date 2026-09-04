@@ -1,7 +1,7 @@
 package dev.anvilcraft.skyland.data.recipe;
 
 import dev.anvilcraft.lib.v2.registrum.providers.RegistrumRecipeProvider;
-import dev.dubhe.anvilcraft.AnvilCraft;
+import dev.anvilcraft.skyland.Skyland;
 import dev.dubhe.anvilcraft.init.block.ModFluids;
 import dev.dubhe.anvilcraft.init.item.ModComponents;
 import dev.dubhe.anvilcraft.init.item.ModItems;
@@ -81,6 +81,6 @@ public class SolidLiquidRecipeLoader {
             idBuilder.append("_and_");
         }
         String id = idBuilder.substring(0, idBuilder.length() - 5);
-        builder.save(provider, AnvilCraft.of("solid_liquid/" + id));
+        builder.save(provider, Skyland.of("solid_liquid/" + id));
     }
 }
